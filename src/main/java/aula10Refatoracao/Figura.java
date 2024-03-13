@@ -15,30 +15,34 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package aula10;
+package aula10Refatoracao;
 
 /**
  *
  * @author Pedro Spindola
  * @date 11/03/2024
- * @brief Class Principal
+ * @brief Class Figura
  */
-public class Principal {
-        public static void main(String[] args) {
-            
-        Quadrado quadrado = new Quadrado();
-        Triangulo triangulo = new Triangulo("Azul", 5, 12);
-        Circulo circulo = new Circulo("Verde", 10.2);
-        Retangulo retangulo = new Retangulo("Rosa", 32, 12);
+/* Uma classe abstrata em Java serve como modelo para outras classes, não podendo ser instanciada diretamente, e
+pode conter métodos abstratos, que devem ser implementados pelas subclasses. */
+public abstract class Figura { 
+    private String cor;
+    
+    public Figura() {
         
-        quadrado.setCor("Roxo");
-        quadrado.setLado1(4);
-        
-        System.out.println(quadrado);
-        System.out.println(triangulo);
-        System.out.println(circulo);
-        System.out.println(retangulo);
-        
-        
+    }
+    public Figura(String cor) {
+        super(); // super(); invoca o construtor padrão da superclasse antes de executar o código no construtor da subclasse.
+        this.cor = cor;
+    }
+    public String getCor(){
+        return cor;
+    }
+    public void setCor(String cor){
+        this.cor = cor;
+    }
+    @Override
+    public String toString() {
+        return "Figura \nCor:" + cor;
     }
 }
