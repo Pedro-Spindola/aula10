@@ -25,8 +25,6 @@ package aula10Refatoracao;
  */
 public class Retangulo extends Figura {
     private double area;
-    private double lado1;
-    private double lado2;
     
     public Retangulo(String cor, double lado1, double lado2) {
         super(cor);
@@ -34,6 +32,6 @@ public class Retangulo extends Figura {
     }
     @Override
     public String toString() {
-        return "Retângulo: \nLado1: " + lado1 + "\nLado2= " + lado2 + "\nCor= " + super.getCor();
+        return "Retângulo: \nÁrea: " + area + "\nCor= " + super.getCor();
     }
 }

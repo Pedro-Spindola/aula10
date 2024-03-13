@@ -31,7 +31,7 @@ public class Triangulo extends Figura{
     }
     public Triangulo(String cor, double base, double altura) {
         super(cor);
-        this.area = base * altura;
+        this.area = ((base * altura) / 2);
     }
     @Override
     public String toString() {

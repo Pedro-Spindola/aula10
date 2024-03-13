@@ -33,6 +33,6 @@ public class Circulo extends Figura {
     }
     @Override
     public String toString(){
-        return "Círculo: \nRaio: " + raio + "\nCor: " + super.getCor();
+        return "Círculo: \nÁrea: " + raio + "\nCor: " + super.getCor();
     }
 }

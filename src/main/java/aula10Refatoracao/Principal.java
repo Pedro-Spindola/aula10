@@ -42,6 +42,7 @@ public class Principal {
                 Quadrado quadrado = new Quadrado(cor, lado);
                 System.out.println(quadrado);
             } else if(navegation == 2) { //Retângulo
+                scanner.nextLine();
                 System.out.print("\nInforme a cor do retângulo: ");
                 String cor = scanner.nextLine();
                 System.out.print("\nInforme o primeiro lado retângulo: ");
@@ -51,6 +52,7 @@ public class Principal {
                 Retangulo retangulo = new Retangulo(cor, lado1, lado2);
                 System.out.println(retangulo);
             } else if(navegation == 3) { //Triângulo
+                scanner.nextLine();
                 System.out.print("\nInforme a cor do triângulo: ");
                 String cor = scanner.nextLine();
                 System.out.print("\nInforme a base do triângulo: ");
